@@ -21,8 +21,11 @@ class Rectangle:
   def get_perimeter(self):
     return ((2 * self.width) + (2 * self.height))
 
+  #Get diagonal method
+  def get_diagonal(self):
+    return(((self.height ** 2) + (self.width ** 2)) ** 0.5)
   
-  
+  #
 
 
 
