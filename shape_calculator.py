@@ -57,4 +57,21 @@ class Square(Rectangle):
     self.height = s
 
   #Set side method
+  def set_side(self, s):
+    self.width = s
+    self.height = s
+
+  #Set height method
+  def set_height(self, h):
+    self.height = h
+    self.width = h
+
+  #Set width method
+  def set_width(self, w):
+    self.width = w
+    self.height = w
   
+  #Return value
+  def __str__(self):
+    op = self.shape + "(side=" + str(self.width) + ")"
+    return op
