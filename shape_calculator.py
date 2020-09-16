@@ -1,5 +1,6 @@
 class Rectangle:
-  
+  shape = "Rectangle"
+
   #Initialization constructor
   def __init__(self, w, h):
     self.width = w
@@ -34,10 +35,26 @@ class Rectangle:
       for x in range(self.height):
         output = output + ("*" * self.width) + "\n"
       return output
+  
+  #Get amount inside method
+  def get_amount_inside(self, cat):
+    main = self.get_area()
+    inside = cat.get_area()
+    times = int(main / inside)
+    return times
 
+  #Return Value
+  def __str__(self):
+    op = self.shape + "(width=" + str(self.width) + ", height=" + str(self.height) + ")"
+    return op
 
+class Square(Rectangle):
+  shape = "Square"
 
+  #Initialization of constructor
+  def __init__(self, s):
+    self.width = s
+    self.height = s
 
-
-
-class Square:
+  #Set side method
+  
